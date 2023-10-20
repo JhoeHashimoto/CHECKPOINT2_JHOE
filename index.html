@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKPOINT 2 JHOE</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <h1>Minha Página HTML</h1>
+    <p>Aprendendo a criar uma página web básica.</p>
+    
+
+    <br>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    
+    <br>
+    <a href "https://example.com">Visite o example</a>
+    
+    <p><img src ="transferir.png" alt="check"></p>
+
+    <br>
+    <table id="tabela">
+        <tr>
+            <td colspan="2">CABEÇALHO</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+        </tr>
+    </table>
+
+    <br>
+    <form action="FORMULARIOCP">
+        <label for="txtNome">NOME:</label>
+        <input type="text" id="txtNome" name="Nome" required>
+        <br>
+        <br>
+
+        <label for="txtSenha">SENHA:</label>
+        <input type="password" id="txtSenha" name="Senha" required>
+        <br>
+        <br>
+
+        <button onclick="botaoForms()">CLIQUE AQUI PARA INSERIR SEU NOME E IDADE</button>
+
+        <br>
+        <br>
+        <button onclick="botaoVariaveis()">CLIQUE AQUI PARA REALIZAR A OPERAÇÃO DE SOMA</button>
+    </form>
+    <script>
+        function botaoForms(){
+            let nome = prompt('Digite seu nome: ')
+            let idade = prompt('Digite a sua idade')
+
+
+            console.log('Nome: ' + nome )
+            console.log('Idade: ' + idade)  
+        }
+        function botaoVariaveis(){
+            let primeiron= 10
+            let segundon= 20
+
+            let soma = parseInt(primeiron) + parseInt(segundon)
+
+            console.log(' A soma dos números digitados ' + primeiron + ' e ' + segundon + ' é igual a: ' + soma)
+        }
+    </script>
+</body>
+</html>

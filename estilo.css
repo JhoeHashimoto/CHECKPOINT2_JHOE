@@ -1,0 +1,17 @@
+p{
+    color: blue
+}
+
+#tabela{
+    text-align: center;
+}
+
+
+img{
+    width: 100px;
+}
+button{
+    border-bottom: 100px;
+    color: black;
+    background-color: red;   
+}
